@@ -5,20 +5,44 @@
   <title>LUCORP - Gestión Académica</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <header class="bg-dark text-white p-3 d-flex justify-content-between align-items-center">
-    <h1 class="m-0">LUCORP</h1>
+    <img src="assets/img/lucorp-logo.webp" alt="Logo LUCORP" class="logo-inicio" link="/index.html" style="cursor: pointer;">
     <nav>
-      <a href="/estudiantes" class="btn btn-outline-light me-2">Estudiantes</a>
-      <a href="/cursos" class="btn btn-outline-light">Cursos</a>
+      <a href="/estudiantes" class="btn-outline-light me-2">Estudiantes</a>
+      <a href="/cursos" class="btn-outline-light">Cursos</a>
     </nav>
   </header>
 
-  <main class="container mt-5 text-center">
-    <h2>Bienvenido a la gestión académica LUCORP</h2>
-    <p>Selecciona una sección para comenzar</p>
-  </main>
+<main class="mt-5 text-center">
+  <h1>Bienvenido a la gestión académica LUCORP</h1>
+  <p>Puedes seleccionar una sección para seguir editando estudiantes o cursos</p>
+
+  <div id="lucorpCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/moderno-edificio-de-negocios-con-pared-de-vidrio-desde-el-piso-vacio.webp" class="d-block w-100" alt="Imagen 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/hermosa-vista-de-la-puesta-de-sol-sobre-el-mar.webp" class="d-block w-100" alt="Imagen 2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/paisaje-de-la-bahia-de-miami.webp" class="d-block w-100" alt="Imagen 3">
+      </div>
+    </div>
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#lucorpCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#lucorpCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#lucorpCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</main>
+
+
 
   <footer class="bg-dark text-white text-center p-3 mt-5">
     &copy; 2025 LUCORP - Todos los derechos reservados
